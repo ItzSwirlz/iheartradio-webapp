@@ -32,4 +32,4 @@ jobs:
     - name: Install Jake (system)
       run: apt update && apt install node-jake -y
     - name: Build using Jake
-      run: npm ci && jake
+      run: npm install && jake
