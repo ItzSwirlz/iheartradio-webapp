@@ -24,6 +24,7 @@
     "electron": "^11.0.4",
     "electron-is-dev": "^1.2.0",
     "electron-updater": "^4.3.5",
+    "jake": "^10.8.2",
     "path": "^0.12.7"
   }
 }
