@@ -15,6 +15,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    container:
+      image: ubuntu:rolling
+      options: --privileged -it
 
     strategy:
       matrix:
