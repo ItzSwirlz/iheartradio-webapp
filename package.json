@@ -22,6 +22,7 @@
   "homepage": "https://github.com/ItzSwirlz/iheartradio-webapp#readme",
   "dependencies": {
     "electron": "^11.0.4",
+    "electron-builder": "^22.9.1",
     "electron-is-dev": "^1.2.0",
     "electron-updater": "^4.3.5",
     "jake": "^10.8.2",
