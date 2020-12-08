@@ -1,0 +1,2 @@
+#!/bin/sh
+cd /usr/share/iheartradio-webapp && npm start
