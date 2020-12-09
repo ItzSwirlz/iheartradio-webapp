@@ -12,10 +12,10 @@ task('build', ['default'], function() {
   jake.Task['default'].invoke();
 });
 
-desc('Installs iHeartRadio (run as root)');
-task('install', function() {
+desc('Installs iHeartRadio for Linux (run as root)');
+task('install-linux', function() {
   console.log('Installing for Linux');
-  jake.exec('npm run install', {printStdout: true}, complete());
+  jake.exec('npm run install-linux', {printStdout: true}, complete());
 });
 
 desc('Starts the application');
