@@ -6,4 +6,4 @@ Exec=/usr/bin/iheartradio
 Icon=iheartradio
 Type=Application
 Categories=Network;Music;Audio
-Path=/usr/bin/iheartradio
+Path=/usr/share/iheartradio-webapp
