@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=iHeartRadio
 Comment=Listen to Your Favorite Music, Podcasts, and Radio Stations for Free!
-GenericName=Music, Podcasts, and Radio
+GenericName=iHeartRadio Webapp
 Exec=/usr/bin/iheartradio
 Icon=iheartradio
 Type=Application
