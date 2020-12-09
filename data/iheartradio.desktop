@@ -2,8 +2,8 @@
 Name=iHeartRadio
 Comment=Listen to Your Favorite Music, Podcasts, and Radio Stations for Free!
 GenericName=Music, Podcasts, and Radio
-Exec=/usr/bin/iheartradio-webapp
-Icon=iheartradio-webapp
+Exec=/usr/bin/iheartradio
+Icon=iheartradio
 Type=Application
 Categories=Network;Music;Audio
-Path=/usr/bin/iheartradio-webapp
+Path=/usr/bin/iheartradio

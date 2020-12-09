@@ -1,14 +1,15 @@
 {
-  "name": "iheartradio-webapp",
+  "name": "iHeartRadio",
   "version": "1.0.0",
   "description": "Webapp for iHeartRadio (for Linux)",
   "main": "src/index.js",
   "scripts": {
-    "start": "electron .",
+    "appveyor-build": "electron-builder build --publish onTagOrDraft",
+    "appveyor-build-mac": "electron-builder build --mac --publish onTagOrDraft",
     "build": "electron-builder build --publish never",
     "build-mac": "electron-builder build --mac --publish never",
-    "appveyor-build": "electron-builder build --publish onTagOrDraft",
-    "appveyor-build-mac": "electron-builder build --publish onTagOrDraft"
+    "run": "electron .",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
