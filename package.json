@@ -8,6 +8,7 @@
     "appveyor-build-mac": "electron-builder build --mac --publish onTagOrDraft",
     "build": "electron-builder build --publish never",
     "build-mac": "electron-builder build --mac --publish never",
+    "install": "node install.js",
     "run": "electron .",
     "start": "electron ."
   },
