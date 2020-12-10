@@ -12,6 +12,12 @@ task('build', ['default'], function() {
   jake.Task['default'].invoke();
 });
 
+desc('Builds snap package using electron-builder');
+task('default', function() {
+  console.log('Building iHeartRadio for Snapcraft');
+  jake.exec('npm ci && npm run build-snap', {printStdout: true}, complete());
+});
+
 desc('Installs iHeartRadio for Linux (run as root)');
 task('install-linux', function() {
   console.log('Installing for Linux');
