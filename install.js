@@ -45,7 +45,7 @@ exec("cp data/iheartradio.desktop /usr/share/applications/", (error, stdout, std
 });
 
 console.log("Installing iHeartRadio icon for the system");
-exec("cp data/iheartradio.svg /usr/share/icons/hicolor/symbolic/apps/", (error, stdout, stderr) => {
+exec("cp data/iheartradio.png /usr/share/pixmaps/", (error, stdout, stderr) => {
   if (error) throw error; return;
   if (stderr) throw stderr; return;
   console.log('stdout: ${stdout}');
