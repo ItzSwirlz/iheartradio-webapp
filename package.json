@@ -10,8 +10,14 @@
     "build-mac": "electron-builder build --mac --publish never",
     "build-snap": "electron-builder --linux snap --publish never",
     "install-linux": "node install.js",
+    "package": "electron-packager . --publish never",
+    "package-mac": "electron-packager . --mac --publish never",
+    "package-snap": "electron-packager . --linux snap --publish never",
     "run": "electron .",
     "start": "electron ."
+  },
+  "build": {
+    "icon": "data/iheartradio.png"
   },
   "repository": {
     "type": "git",
@@ -25,6 +31,7 @@
   "homepage": "https://github.com/ItzSwirlz/iheartradio-webapp#readme",
   "dependencies": {
     "electron-is-dev": "^1.2.0",
+    "electron-packager": "^15.2.0",
     "electron-updater": "^4.3.5",
     "jake": "^10.8.2",
     "path": "^0.12.7"

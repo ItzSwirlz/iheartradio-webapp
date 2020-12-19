@@ -1,9 +1,9 @@
 let {task, desc} = require('jake');
 
-desc('Builds using electron-builder');
+desc('Builds using electron-builder for Linux and Mac OS');
 task('default', function() {
   console.log('Building iHeartRadio');
-  jake.exec('npm ci && npm run build --if-present', {printStdout: true}, complete());
+  jake.exec('npm ci && npm run build', {printStdout: true}, complete());
 });
 
 desc('Invokes default task');
@@ -12,8 +12,14 @@ task('build', ['default'], function() {
   jake.Task['default'].invoke();
 });
 
+desc('Builds Mac OS DMG using electron-builder');
+task('build-mac', function() {
+  console.log('Building iHeartRadio for Mac OS');
+  jake.exec('npm ci && npm run build-mac', {printStdout: true}, complete());
+});
+
 desc('Builds snap package using electron-builder');
-task('default', function() {
+task('build-snap', function() {
   console.log('Building iHeartRadio for Snapcraft');
   jake.exec('npm ci && npm run build-snap', {printStdout: true}, complete());
 });
@@ -22,6 +28,24 @@ desc('Installs iHeartRadio for Linux (run as root)');
 task('install-linux', function() {
   console.log('Installing for Linux');
   jake.exec('npm run install-linux', {printStdout: true}, complete());
+});
+
+desc('Packages using electron-packager for Linux and Mac OS');
+task('package', function() {
+  console.log('Packaging iHeartRadio');
+  jake.exec('npm ci && npm run package', {printStdout: true}, complete());
+});
+
+desc('Packages Mac OS DMG using electron-packager');
+task('package-mac', function() {
+  console.log('Packaging iHeartRadio for Mac OS');
+  jake.exec('npm ci && npm run package-mac', {printStdout: true}, complete());
+});
+
+desc('Packages snap package using electron-packager');
+task('package-snap', function() {
+  console.log('Packaging iHeartRadio for Snapcraft');
+  jake.exec('npm ci && npm run package-snap', {printStdout: true}, complete());
 });
 
 desc('Starts the application');
