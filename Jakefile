@@ -1,4 +1,4 @@
-let {task, desc} = require('jake');
+const {task, desc} = require('jake');
 
 desc('Builds using electron-builder for Linux and Mac OS');
 task('default', function() {
@@ -9,7 +9,7 @@ task('default', function() {
 desc('Invokes default task');
 task('build', ['default'], function() {
   console.log('Invoking default task')
-  jake.Task['default'].invoke();
+  jake.Task.default.invoke();
 });
 
 desc('Builds Mac OS DMG using electron-builder');
