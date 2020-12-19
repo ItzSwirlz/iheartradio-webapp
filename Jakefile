@@ -30,6 +30,12 @@ task('install-linux', function() {
   jake.exec('npm run install-linux', {printStdout: true}, complete());
 });
 
+desc('Lints the application with eslint');
+task('lint', function() {
+  console.log('Linting iHeartRadio');
+  jake.exec('npm run lint', {printStdout: true}, complete());
+});
+
 desc('Packages using electron-packager for Linux and Mac OS');
 task('package', function() {
   console.log('Packaging iHeartRadio');
@@ -52,4 +58,10 @@ desc('Starts the application');
 task('start', function() {
   console.log('Starting iHeartRadio');
   jake.exec('npm start', {printStdout: true}, complete());
+});
+
+desc('Tests the application with eslint');
+task('test', function() {
+  console.log('Testing iHeartRadio');
+  jake.exec('npm run test', {printStdout: true}, complete());
 });

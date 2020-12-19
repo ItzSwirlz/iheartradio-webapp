@@ -10,11 +10,13 @@
     "build-mac": "electron-builder build --mac --publish never",
     "build-snap": "electron-builder --linux snap --publish never",
     "install-linux": "node install.js",
+    "lint": "eslint src/index.js src/preload.js install.js Jakefile --fix",
     "package": "electron-packager . --publish never",
     "package-mac": "electron-packager . --mac --publish never",
     "package-snap": "electron-packager . --linux snap --publish never",
     "run": "electron .",
-    "start": "electron ."
+    "start": "electron .",
+    "test": "eslint src/index.js src/preload.js install.js Jakefile"
   },
   "build": {
     "icon": "data/iheartradio.png"
