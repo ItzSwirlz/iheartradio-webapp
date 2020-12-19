@@ -5,7 +5,7 @@ description: Webapp for iHeartRadio (for Linux)
 architectures:
   - amd64
 base: core18
-grade: candidate
+grade: devel
 confinement: strict
 
 plugs:
