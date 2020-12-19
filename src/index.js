@@ -1,12 +1,15 @@
-const {app, BrowserWindow, dialog} = require('electron');
-const isDev = require('electron-is-dev');
-const { autoUpdater } = require("electron-updater");
+const dirname = ".";
+const {app, BrowserWindow} = require('electron');
+const {autoUpdater} = require("electron-updater");
 const path = require('path');
+const process = require('process');
+
+// Program variable for the window
+let mainWindow;
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 autoUpdater.checkForUpdatesAndNotify();
-let mainWindow;
 
 function clearCache() {
   if (mainWindow != null) mainWindow.webContents.session.clearCache();
@@ -17,9 +20,9 @@ function createWindow () {
     width: 1024,
     height: 600,
     title: "iHeartRadio",
-    icon: __dirname + '/icon.png',
+    icon: dirname + '/icon.png',
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js'),
+      preload: path.join(dirname, 'preload.js'),
       plugins: true
     }
   });

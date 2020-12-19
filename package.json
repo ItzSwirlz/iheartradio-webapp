@@ -36,7 +36,8 @@
     "electron-packager": "^15.2.0",
     "electron-updater": "^4.3.5",
     "jake": "^10.8.2",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "process": "^0.11.10"
   },
   "devDependencies": {
     "electron": "^11.1.0",
