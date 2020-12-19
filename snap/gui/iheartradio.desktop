@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=iHeartRadio
+Exec=iheartradio %U
+Terminal=false
+Type=Application
+Icon=${SNAP}/meta/gui/icon.png
+StartupWMClass=iHeartRadio
+Comment=Webapp for iHeartRadio (for Linux)
+Categories=Utility;
