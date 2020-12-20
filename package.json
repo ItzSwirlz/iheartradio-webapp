@@ -1,6 +1,6 @@
 {
   "name": "iHeartRadio",
-  "version": "1.0.0-candidate",
+  "version": "1.0.0",
   "description": "Webapp for iHeartRadio (for Linux)",
   "main": "src/index.js",
   "scripts": {
