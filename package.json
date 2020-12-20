@@ -7,6 +7,7 @@
     "appveyor-build": "electron-builder build --publish onTagOrDraft",
     "appveyor-build-mac": "electron-builder build --mac --publish onTagOrDraft",
     "build": "electron-builder build --publish never",
+    "build-armv7l": "electron-builder build --armv7l --publish never",
     "build-mac": "electron-builder build --mac --publish never",
     "build-snap": "electron-builder --linux snap --publish never",
     "install-linux": "node install.js",

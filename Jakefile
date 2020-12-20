@@ -10,6 +10,11 @@ task('build', ['default'], function() {
   jake.Task.default.invoke();
 });
 
+desc('Builds using electron-builder for armv7l/armhf');
+task('build-armv7l', function() {
+  jake.exec('npm ci && npm run build-armv7l', {printStdout: true}, complete());
+});
+
 desc('Builds Mac OS DMG using electron-builder');
 task('build-mac', function() {
   jake.exec('npm ci && npm run build-mac', {printStdout: true}, complete());
