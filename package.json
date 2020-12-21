@@ -1,7 +1,7 @@
 {
   "name": "iHeartRadio",
   "version": "1.0.0",
-  "description": "Webapp for iHeartRadio (for Linux)",
+  "description": "Webapp for iHeartRadio",
   "main": "src/index.js",
   "scripts": {
     "appveyor-build": "electron-builder build --publish onTagOrDraft",
@@ -22,10 +22,7 @@
   "build": {
     "icon": "data/iheartradio.png"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ItzSwirlz/iheartradio-webapp.git"
-  },
+  "repository": "git+https://github.com/ItzSwirlz/iheartradio-webapp.git",
   "author": "Joshua Peisach",
   "license": "GPL-3.0-or-later",
   "bugs": {
