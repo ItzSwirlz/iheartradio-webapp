@@ -32,7 +32,7 @@ function createWindow () {
   mainWindow.loadURL('https://iheart.com/');
 
   mainWindow.on('closed', function () {
-    mainWindow = null
+    mainWindow = null;
   });
 }
 
