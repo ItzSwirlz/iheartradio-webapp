@@ -30,15 +30,15 @@
   },
   "homepage": "https://github.com/ItzSwirlz/iheartradio-webapp#readme",
   "dependencies": {
-    "electron-packager": "^15.2.0",
-    "electron-updater": "^4.3.5",
-    "jake": "^10.8.2",
-    "path": "^0.12.7",
-    "process": "^0.11.10"
+    "electron-packager": "15.2.0",
+    "electron-updater": "4.3.5",
+    "jake": "10.8.2",
+    "path": "0.12.7",
+    "process": "0.11.10"
   },
   "devDependencies": {
-    "electron": "^11.5.0",
-    "electron-builder": "^22.9.1",
-    "eslint": "^7.16.0"
+    "electron": "11.5.0",
+    "electron-builder": "22.9.1",
+    "eslint": "7.16.0"
   }
 }
