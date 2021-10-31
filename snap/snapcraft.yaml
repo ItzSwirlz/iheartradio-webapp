@@ -1,6 +1,6 @@
 name: iheartradio
 summary: iHeartRadio
-version: 1.2.0
+version: 1.4.0
 description: Webapp for iHeartRadio (for Linux)
 architectures:
   - amd64
