@@ -37,7 +37,7 @@
     "process": "0.11.10"
   },
   "devDependencies": {
-    "electron": "15.5.5",
+    "electron": "18.3.7",
     "electron-builder": "22.9.1",
     "eslint": "7.16.0"
   }
